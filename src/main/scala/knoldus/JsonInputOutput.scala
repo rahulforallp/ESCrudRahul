@@ -1,5 +1,7 @@
 package knoldus
 
+import java.io.{File, PrintWriter}
+
 import org.elasticsearch.action.admin.indices.create.CreateIndexResponse
 import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest
 import org.elasticsearch.action.bulk.BulkResponse
@@ -19,7 +21,7 @@ import scala.io.Source
 /**
   * Created by knoldus on 3/4/16.
   */
-class JsonInputOutput {
+trait JsonInputOutput {
 
   val contentBuilder = jsonBuilder
     .startObject
@@ -54,4 +56,12 @@ class JsonInputOutput {
     }
     preparedBulk.execute().actionGet()
   }
+
+  def retrieveJson(client: Client):Boolean={
+    val data=client.prepareSearch("twitter").setTypes("tweet").execute().get()
+    val pw=new PrintWriter(new File("/src/test/resources/OutputJson.json"))
+    pw.write(data.toString)
+    true
+  }
+
 }

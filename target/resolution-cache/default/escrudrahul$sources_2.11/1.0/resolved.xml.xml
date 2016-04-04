@@ -4,7 +4,7 @@
 		module="escrudrahul$sources_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20160403093915"
+		publication="20160404103930"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -24,7 +24,7 @@
 	<publications>
 	</publications>
 	<dependencies>
-		<dependency org="org.scala-lang" name="scala-library" rev="2.11.5" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile);scala-tool->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.11.5/">
+		<dependency org="org.scala-lang" name="scala-library" rev="2.11.5" transitive="false" conf="compile->default(compile);runtime->default(compile);compile-internal->default(compile);runtime-internal->default(compile);scala-tool->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.11.5/">
 			<artifact name="scala-library" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.elasticsearch" name="elasticsearch" rev="1.5.2" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
@@ -77,6 +77,15 @@
 		</dependency>
 		<dependency org="org.ow2.asm" name="asm-commons" rev="4.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="asm-commons" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.scalatest" name="scalatest_2.11" rev="2.2.6" transitive="false" conf="test->default(compile);test-internal->default(compile)">
+			<artifact name="scalatest_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.11.7" transitive="false" conf="test->default(compile);test-internal->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.11.7/">
+			<artifact name="scala-library" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.scala-lang" name="scala-reflect" rev="2.11.7" transitive="false" conf="test->default(compile);test-internal->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.11.7/">
+			<artifact name="scala-reflect" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.5" transitive="false" conf="scala-tool->default(compile)">
 			<artifact name="scala-compiler" type="src" ext="jar" conf="sources" e:classifier="sources"/>

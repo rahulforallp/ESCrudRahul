@@ -20,6 +20,10 @@ object Impl extends ElasticSearchImpl with App {
   println("Deleted ")
   Thread.sleep(1000)
 
+  val searched=retrieve(client)
+  println("searched : "+searched)
+  Thread.sleep(1000)
+
   val deleteIndexResponse = deleteIndex(client, "twitter")
   println("Delete index response " + deleteIndexResponse)
 }

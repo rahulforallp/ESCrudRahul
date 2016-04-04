@@ -4,7 +4,7 @@
 		module="escrudrahul$sbt_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20160403093914"
+		publication="20160404103929"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>

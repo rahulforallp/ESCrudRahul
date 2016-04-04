@@ -7,10 +7,63 @@
 		revision="1.0"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20160403093915"/>
+		date="20160404103930"/>
 	<dependencies>
+		<module organisation="org.scalatest" name="scalatest_2.11">
+			<revision name="2.2.6" status="release" pubdate="20160106001921" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="17">
+				<license name="the Apache License, ASL Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="4971" time="0" location="/home/knoldus/.ivy2/cache/org.scalatest/scalatest_2.11/ivy-2.2.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/2.2.6/scalatest_2.11-2.2.6.pom"/>
+				<caller organisation="default" name="escrudrahul$sources_2.11" conf="test, compile, runtime" rev="2.2.6" rev-constraint-default="2.2.6" rev-constraint-dynamic="2.2.6" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scalatest_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1439140" time="0" location="/home/knoldus/.ivy2/cache/org.scalatest/scalatest_2.11/srcs/scalatest_2.11-2.2.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/2.2.6/scalatest_2.11-2.2.6-sources.jar"/>
+					</artifact>
+					<artifact name="scalatest_2.11" type="jar" ext="jar" status="no" details="" size="7439504" time="0" location="/home/knoldus/.ivy2/cache/org.scalatest/scalatest_2.11/jars/scalatest_2.11-2.2.6.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scalatest/scalatest_2.11/2.2.6/scalatest_2.11-2.2.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.11.7" status="release" pubdate="20150623014700" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.7/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="19">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2825" time="0" location="/home/knoldus/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.11.7.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.7/scala-reflect-2.11.7.pom"/>
+				<caller organisation="default" name="escrudrahul$sources_2.11" conf="test, compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.11.7/"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="4576443" time="0" location="/home/knoldus/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.7/scala-reflect-2.11.7.jar"/>
+					</artifact>
+					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="561516" time="0" location="/home/knoldus/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.11.7-sources.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.7/scala-reflect-2.11.7-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.7" status="release" pubdate="20150803213311" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.7/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="18">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/home/knoldus/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.7.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7.pom"/>
+				<caller organisation="default" name="escrudrahul$sources_2.11" conf="test, compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.11.7/"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5745606" time="0" location="/home/knoldus/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7.jar"/>
+					</artifact>
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="908307" time="0" location="/home/knoldus/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.7-sources.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.11.5" status="release" pubdate="20150107060200" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.5/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="-1">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/home/knoldus/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.5.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.5/scala-library-2.11.5.pom"/>
+				<evicted-by rev="2.11.7"/>
+				<caller organisation="default" name="escrudrahul$sources_2.11" conf="test, compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.11.5/"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="org.elasticsearch" name="elasticsearch">
-			<revision name="1.5.2" status="release" pubdate="20150427145400" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+			<revision name="1.5.2" status="release" pubdate="20150427145400" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="8408" time="0" location="/home/knoldus/.ivy2/cache/org.elasticsearch/elasticsearch/ivy-1.5.2.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/elasticsearch/elasticsearch/1.5.2/elasticsearch-1.5.2.pom"/>
 				<caller organisation="default" name="escrudrahul$sources_2.11" conf="test, compile, runtime" rev="1.5.2" rev-constraint-default="1.5.2" rev-constraint-dynamic="1.5.2" callerrev="1.0"/>
@@ -25,7 +78,7 @@
 			</revision>
 		</module>
 		<module organisation="org.ow2.asm" name="asm-commons">
-			<revision name="4.1" status="release" pubdate="20121014210823" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="17">
+			<revision name="4.1" status="release" pubdate="20121014210823" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="16">
 				<metadata-artifact status="no" details="" size="4055" time="0" location="/home/knoldus/.ivy2/cache/org.ow2.asm/asm-commons/ivy-4.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/ow2/asm/asm-commons/4.1/asm-commons-4.1.pom"/>
 				<caller organisation="default" name="escrudrahul$sources_2.11" conf="test, compile, runtime" rev="4.1" rev-constraint-default="4.1" rev-constraint-dynamic="4.1" callerrev="1.0"/>
 				<artifacts>
@@ -39,7 +92,7 @@
 			</revision>
 		</module>
 		<module organisation="org.ow2.asm" name="asm">
-			<revision name="4.1" status="release" pubdate="20121014210745" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="16">
+			<revision name="4.1" status="release" pubdate="20121014210745" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="15">
 				<metadata-artifact status="no" details="" size="3744" time="0" location="/home/knoldus/.ivy2/cache/org.ow2.asm/asm/ivy-4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm/4.1/asm-4.1.pom"/>
 				<caller organisation="default" name="escrudrahul$sources_2.11" conf="test, compile, runtime" rev="4.1" rev-constraint-default="4.1" rev-constraint-dynamic="4.1" callerrev="1.0"/>
 				<artifacts>
@@ -53,7 +106,7 @@
 			</revision>
 		</module>
 		<module organisation="org.antlr" name="antlr-runtime">
-			<revision name="3.5" status="release" pubdate="20130105090525" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.antlr.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="15">
+			<revision name="3.5" status="release" pubdate="20130105090525" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.antlr.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="14">
 				<metadata-artifact status="no" details="" size="5435" time="0" location="/home/knoldus/.ivy2/cache/org.antlr/antlr-runtime/ivy-3.5.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/antlr/antlr-runtime/3.5/antlr-runtime-3.5.pom"/>
 				<caller organisation="default" name="escrudrahul$sources_2.11" conf="test, compile, runtime" rev="3.5" rev-constraint-default="3.5" rev-constraint-dynamic="3.5" callerrev="1.0"/>
 				<artifacts>
@@ -67,7 +120,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.lucene" name="lucene-spatial">
-			<revision name="4.10.4" status="release" pubdate="20150303134800" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="13">
+			<revision name="4.10.4" status="release" pubdate="20150303134800" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="12">
 				<metadata-artifact status="no" details="" size="332060" time="0" location="/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-spatial/ivy-4.10.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/lucene/lucene-spatial/4.10.4/lucene-spatial-4.10.4.pom"/>
 				<caller organisation="default" name="escrudrahul$sources_2.11" conf="test, compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="1.0"/>
 				<artifacts>
@@ -81,7 +134,7 @@
 			</revision>
 		</module>
 		<module organisation="com.spatial4j" name="spatial4j">
-			<revision name="0.4.1" status="release" pubdate="20140219114100" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spatial4j/spatial4j" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="14">
+			<revision name="0.4.1" status="release" pubdate="20140219114100" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spatial4j/spatial4j" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="13">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="4157" time="0" location="/home/knoldus/.ivy2/cache/com.spatial4j/spatial4j/ivy-0.4.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/spatial4j/spatial4j/0.4.1/spatial4j-0.4.1.pom"/>
 				<caller organisation="default" name="escrudrahul$sources_2.11" conf="test, compile, runtime" rev="0.4.1" rev-constraint-default="0.4.1" rev-constraint-dynamic="0.4.1" callerrev="1.0"/>
@@ -96,7 +149,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.lucene" name="lucene-join">
-			<revision name="4.10.4" status="release" pubdate="20150303134900" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="11">
+			<revision name="4.10.4" status="release" pubdate="20150303134900" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="10">
 				<metadata-artifact status="no" details="" size="332005" time="0" location="/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-join/ivy-4.10.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/lucene/lucene-join/4.10.4/lucene-join-4.10.4.pom"/>
 				<caller organisation="default" name="escrudrahul$sources_2.11" conf="test, compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="1.0"/>
 				<artifacts>
@@ -110,7 +163,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.lucene" name="lucene-grouping">
-			<revision name="4.10.4" status="release" pubdate="20150303135000" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="12">
+			<revision name="4.10.4" status="release" pubdate="20150303135000" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="11">
 				<metadata-artifact status="no" details="" size="331908" time="0" location="/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-grouping/ivy-4.10.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/lucene/lucene-grouping/4.10.4/lucene-grouping-4.10.4.pom"/>
 				<caller organisation="default" name="escrudrahul$sources_2.11" conf="test, compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="1.0"/>
 				<artifacts>
@@ -124,7 +177,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.lucene" name="lucene-suggest">
-			<revision name="4.10.4" status="release" pubdate="20150303134800" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="9">
+			<revision name="4.10.4" status="release" pubdate="20150303134800" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="8">
 				<metadata-artifact status="no" details="" size="332460" time="0" location="/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-suggest/ivy-4.10.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/lucene/lucene-suggest/4.10.4/lucene-suggest-4.10.4.pom"/>
 				<caller organisation="default" name="escrudrahul$sources_2.11" conf="test, compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="1.0"/>
 				<artifacts>
@@ -138,7 +191,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.lucene" name="lucene-misc">
-			<revision name="4.10.4" status="release" pubdate="20150303134900" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="10">
+			<revision name="4.10.4" status="release" pubdate="20150303134900" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="9">
 				<metadata-artifact status="no" details="" size="331663" time="0" location="/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-misc/ivy-4.10.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/lucene/lucene-misc/4.10.4/lucene-misc-4.10.4.pom"/>
 				<caller organisation="default" name="escrudrahul$sources_2.11" conf="test, compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="1.0"/>
 				<artifacts>
@@ -152,7 +205,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.lucene" name="lucene-highlighter">
-			<revision name="4.10.4" status="release" pubdate="20150303135000" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="6">
+			<revision name="4.10.4" status="release" pubdate="20150303135000" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="5">
 				<metadata-artifact status="no" details="" size="332215" time="0" location="/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-highlighter/ivy-4.10.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/lucene/lucene-highlighter/4.10.4/lucene-highlighter-4.10.4.pom"/>
 				<caller organisation="default" name="escrudrahul$sources_2.11" conf="test, compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="1.0"/>
 				<artifacts>
@@ -166,7 +219,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.lucene" name="lucene-memory">
-			<revision name="4.10.4" status="release" pubdate="20150303134900" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="5">
+			<revision name="4.10.4" status="release" pubdate="20150303134900" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="4">
 				<metadata-artifact status="no" details="" size="332181" time="0" location="/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-memory/ivy-4.10.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/lucene/lucene-memory/4.10.4/lucene-memory-4.10.4.pom"/>
 				<caller organisation="default" name="escrudrahul$sources_2.11" conf="test, compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="1.0"/>
 				<artifacts>
@@ -180,7 +233,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.lucene" name="lucene-queryparser">
-			<revision name="4.10.4" status="release" pubdate="20150303134900" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="7">
+			<revision name="4.10.4" status="release" pubdate="20150303134900" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="6">
 				<metadata-artifact status="no" details="" size="332338" time="0" location="/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-queryparser/ivy-4.10.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/lucene/lucene-queryparser/4.10.4/lucene-queryparser-4.10.4.pom"/>
 				<caller organisation="default" name="escrudrahul$sources_2.11" conf="test, compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="1.0"/>
 				<artifacts>
@@ -194,7 +247,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.lucene" name="lucene-sandbox">
-			<revision name="4.10.4" status="release" pubdate="20150303134800" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="8">
+			<revision name="4.10.4" status="release" pubdate="20150303134800" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="7">
 				<metadata-artifact status="no" details="" size="331767" time="0" location="/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-sandbox/ivy-4.10.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/lucene/lucene-sandbox/4.10.4/lucene-sandbox-4.10.4.pom"/>
 				<caller organisation="default" name="escrudrahul$sources_2.11" conf="test, compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="1.0"/>
 				<artifacts>
@@ -208,7 +261,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.lucene" name="lucene-queries">
-			<revision name="4.10.4" status="release" pubdate="20150303134900" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="4">
+			<revision name="4.10.4" status="release" pubdate="20150303134900" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="3">
 				<metadata-artifact status="no" details="" size="331629" time="0" location="/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-queries/ivy-4.10.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/lucene/lucene-queries/4.10.4/lucene-queries-4.10.4.pom"/>
 				<caller organisation="default" name="escrudrahul$sources_2.11" conf="test, compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="1.0"/>
 				<artifacts>
@@ -222,7 +275,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.lucene" name="lucene-analyzers-common">
-			<revision name="4.10.4" status="release" pubdate="20150303135300" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="3">
+			<revision name="4.10.4" status="release" pubdate="20150303135300" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
 				<metadata-artifact status="no" details="" size="331657" time="0" location="/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-analyzers-common/ivy-4.10.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/lucene/lucene-analyzers-common/4.10.4/lucene-analyzers-common-4.10.4.pom"/>
 				<caller organisation="default" name="escrudrahul$sources_2.11" conf="test, compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="1.0"/>
 				<artifacts>
@@ -236,7 +289,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.lucene" name="lucene-core">
-			<revision name="4.10.4" status="release" pubdate="20150303135100" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+			<revision name="4.10.4" status="release" pubdate="20150303135100" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
 				<metadata-artifact status="no" details="" size="330556" time="0" location="/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-core/ivy-4.10.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/lucene/lucene-core/4.10.4/lucene-core-4.10.4.pom"/>
 				<caller organisation="default" name="escrudrahul$sources_2.11" conf="test, compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="1.0"/>
 				<artifacts>
@@ -245,21 +298,6 @@
 					</artifact>
 					<artifact name="lucene-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1969441" time="0" location="/home/knoldus/.ivy2/cache/org.apache.lucene/lucene-core/srcs/lucene-core-4.10.4-sources.jar">
 						<origin-location is-local="false" location="https://jcenter.bintray.com/org/apache/lucene/lucene-core/4.10.4/lucene-core-4.10.4-sources.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.scala-lang" name="scala-library">
-			<revision name="2.11.5" status="release" pubdate="20150107060200" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.5/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
-				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
-				<metadata-artifact status="no" details="" size="2653" time="0" location="/home/knoldus/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.5.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.5/scala-library-2.11.5.pom"/>
-				<caller organisation="default" name="escrudrahul$sources_2.11" conf="test, compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.11.5/"/>
-				<artifacts>
-					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="903802" time="0" location="/home/knoldus/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.5-sources.jar">
-						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.5/scala-library-2.11.5-sources.jar"/>
-					</artifact>
-					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5576839" time="0" location="/home/knoldus/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.5.jar">
-						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.5/scala-library-2.11.5.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>

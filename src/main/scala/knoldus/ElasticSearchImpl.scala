@@ -4,17 +4,11 @@ import org.elasticsearch.action.admin.indices.create.CreateIndexResponse
 import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest
 import org.elasticsearch.action.bulk.BulkResponse
 import org.elasticsearch.action.delete.DeleteResponse
-import org.elasticsearch.action.search.SearchResponse
 import org.elasticsearch.action.update.{UpdateRequest, UpdateResponse}
 import org.elasticsearch.client.Client
 import org.elasticsearch.common.settings.ImmutableSettings
 import org.elasticsearch.common.xcontent.XContentFactory._
-import org.elasticsearch.index.query.FilterBuilders._
-import org.elasticsearch.index.query.QueryBuilders
 import org.elasticsearch.node.NodeBuilder._
-import org.elasticsearch.search.sort.SortOrder
-
-import scala.io.Source
 
 /**
   * Created by knoldus on 3/4/16.
@@ -79,7 +73,9 @@ trait ElasticSearchImpl {
     delResponse
   }
 
-
+  def retrieve(client: Client):Long={
+    client.prepareSearch("twitter").execute().actionGet().getHits.totalHits()
+  }
 
   def deleteIndex(client: Client, indexName: String): Boolean = {
     val deleteIndexRequest = new DeleteIndexRequest(indexName)

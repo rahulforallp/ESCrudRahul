@@ -670,9 +670,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-agent;0.13.7!test-agent.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.7!apply-macro.jar
-[debug] :: resolution report :: resolve 581ms :: artifacts dl 23ms
+[debug] :: resolution report :: resolve 843ms :: artifacts dl 25ms
 [debug] 	report for default#escrudrahul$sbt_2.11;1.0 default produced in /home/knoldus/Documents/ESCrudRahul/target/resolution-cache/reports/default-escrudrahul$sbt_2.11-default.xml
-[debug] 	resolve done (581ms resolve - 23ms download)
+[debug] 	resolve done (843ms resolve - 25ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: default#escrudrahul$sources_2.11;1.0
 [debug] 	confs: [default]
@@ -795,6 +795,6 @@
 [debug] 	[NOT REQUIRED] org.spire-math#jawn-parser_2.10;0.6.0!jawn-parser_2.10.jar(src)
 [debug] 	[NOT REQUIRED] org.spire-math#json4s-support_2.10;0.6.0!json4s-support_2.10.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar(src)
-[debug] :: resolution report :: resolve 36ms :: artifacts dl 8ms
+[debug] :: resolution report :: resolve 29ms :: artifacts dl 8ms
 [debug] 	report for default#escrudrahul$sources_2.11;1.0 default produced in /home/knoldus/Documents/ESCrudRahul/target/resolution-cache/reports/default-escrudrahul$sources_2.11-default.xml
-[debug] 	resolve done (36ms resolve - 8ms download)
+[debug] 	resolve done (29ms resolve - 8ms download)
