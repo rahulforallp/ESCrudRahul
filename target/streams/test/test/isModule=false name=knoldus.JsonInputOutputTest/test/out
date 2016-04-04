@@ -1,0 +1,15 @@
+[0m[[0minfo[0m] [0m[32mJsonInputOutputTest:[0m[0m
+[0m[[0minfo[0m] [0m[32m- Insert JSon[0m[0m
+[0m[[0minfo[0m] [0m[31m- Retrieve JSon *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.io.FileNotFoundException: /src/test/resources/OutputJson.json (No such file or directory)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at java.io.FileOutputStream.open0(Native Method)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at java.io.FileOutputStream.open(FileOutputStream.java:270)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at java.io.FileOutputStream.<init>(FileOutputStream.java:213)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at java.io.FileOutputStream.<init>(FileOutputStream.java:162)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at java.io.PrintWriter.<init>(PrintWriter.java:263)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at knoldus.JsonInputOutput$class.retrieveJson(JsonInputOutput.scala:62)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at knoldus.JsonInputOutputTest.retrieveJson(JsonInputOutputTest.scala:8)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at knoldus.JsonInputOutputTest$$anonfun$2.apply$mcV$sp(JsonInputOutputTest.scala:19)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at knoldus.JsonInputOutputTest$$anonfun$2.apply(JsonInputOutputTest.scala:18)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at knoldus.JsonInputOutputTest$$anonfun$2.apply(JsonInputOutputTest.scala:18)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m

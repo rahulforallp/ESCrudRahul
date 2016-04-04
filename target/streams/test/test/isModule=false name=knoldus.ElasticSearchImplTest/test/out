@@ -1,0 +1,14 @@
+[0m[[0minfo[0m] [0m[32mDeferredAbortedSuite:[0m[0m
+[0m[[0minfo[0m] [0m[31mException encountered when attempting to run a suite with class name: org.scalatest.DeferredAbortedSuite *** ABORTED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  org.elasticsearch.indices.IndexAlreadyExistsException: [twitter] already exists[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService.validateIndexName(MetaDataCreateIndexService.java:160)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService.validate(MetaDataCreateIndexService.java:552)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService.access$200(MetaDataCreateIndexService.java:88)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$2.execute(MetaDataCreateIndexService.java:230)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:365)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:188)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:158)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at java.lang.Thread.run(Thread.java:745)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m

@@ -6,7 +6,7 @@ package knoldus
 object Impl extends ElasticSearchImpl with App {
 
   val client = getClient()
-  val mappedClient = addMappingToIndex("twitter", client)
+  /*val mappedClient = addMappingToIndex("twitter", client)
 
   val inserted = insert(client)
   println("Inserted : " + inserted.getItems.length)
@@ -22,7 +22,7 @@ object Impl extends ElasticSearchImpl with App {
 
   val searched=retrieve(client)
   println("searched : "+searched)
-  Thread.sleep(1000)
+  Thread.sleep(1000)*/
 
   val deleteIndexResponse = deleteIndex(client, "twitter")
   println("Delete index response " + deleteIndexResponse)

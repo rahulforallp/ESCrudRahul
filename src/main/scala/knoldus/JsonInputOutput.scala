@@ -59,9 +59,15 @@ trait JsonInputOutput {
 
   def retrieveJson(client: Client):Boolean={
     val data=client.prepareSearch("twitter").setTypes("tweet").execute().get()
-    val pw=new PrintWriter(new File("/src/test/resources/OutputJson.json"))
+    val pw=new PrintWriter(new File("/home/knoldus/Documents/ESCrudRahul/src/test/resources/OutputJson.json"))
     pw.write(data.toString)
     true
+  }
+
+  def deleteIndex(client: Client, indexName: String): Boolean = {
+    val deleteIndexRequest = new DeleteIndexRequest(indexName)
+    val deleteIndexResponse = client.admin().indices().delete(deleteIndexRequest).actionGet()
+    deleteIndexResponse.isAcknowledged()
   }
 
 }
